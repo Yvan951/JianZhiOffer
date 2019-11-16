@@ -32,8 +32,8 @@ public class 重建二叉树 {
                 indexIn = i;
             }
         }
-        int[] leftIn = Arrays.copyOfRange(in, 0, indexIn );
-        int[] rightIn = Arrays.copyOfRange(in, indexIn +1, in.length);
+        int[] leftIn = Arrays.copyOfRange(in, 0, indexIn);
+        int[] rightIn = Arrays.copyOfRange(in, indexIn + 1, in.length);
         int[] leftPre = Arrays.copyOfRange(pre, 1, 1 + leftIn.length);
         int[] rightPre = Arrays.copyOfRange(pre, 1 + leftIn.length, pre.length);
         root.left = helper(leftPre, leftIn);
